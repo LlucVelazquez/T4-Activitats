@@ -8,7 +8,9 @@ namespace T4_Activitats
             Dictionary<string, int> alumnesEdat = new Dictionary<string, int>();
             for (int i = 0; i < 5; i++)
             {
-                alumnesEdat.Add($"{i}",int.Parse(Console.ReadLine()));
+                string name = Console.ReadLine();
+                int age = int.Parse(Console.ReadLine());
+                alumnesEdat.Add(name,age);
             }
             foreach (var alumne in alumnesEdat)
             {
