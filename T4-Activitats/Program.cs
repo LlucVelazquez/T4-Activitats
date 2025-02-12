@@ -10,7 +10,7 @@ namespace T4_Activitats
         public static int Multiplicar(int a, int b) { return a * b; }
         public static int Divisio(int a, int b) => a / b;
 
-        public static void ExecutarOperacio(int a, int b, Operacio op) => op(a,b);
+        public static void ExecutarOperacio(int a, int b, Operacio op) => Console.WriteLine(op(a,b));
         public static void Main(string[] args)
         {
             DelegatePrintOf printOp = SumaPrint;
@@ -24,6 +24,11 @@ namespace T4_Activitats
 
             Operacio op = Multiplicar;
             ExecutarOperacio(5,8,op);
+
+            // 23
+            Console.WriteLine("ex 23");
+            Operacio op1 = (a,b) => (int)Math.Pow(a,b);
+            Console.WriteLine(op1(2,3));
         }
     }
 }
