@@ -8,6 +8,7 @@ namespace T4_Activitats
         {
             notificacio("Aixo es una notificacio");
         }
+
         public static void Main(string[] args)
         {
             ExecutarAmbMetodeAnonim((msg) => Console.WriteLine($"{msg}"));
